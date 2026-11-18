@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 {{DEST}}/scripts/odoo.py *)"
+    ],
+    "deny": [
+      "Bash(env)",
+      "Bash(env *)",
+      "Bash(printenv)",
+      "Bash(printenv *)",
+      "Bash(set)",
+      "Bash(export -p)",
+      "Bash(declare -p)",
+      "Bash(declare -x)",
+      "Read(//proc/**)",
+      "Bash(cat /proc/*)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(gh *)"
+    ]
+  }
+}

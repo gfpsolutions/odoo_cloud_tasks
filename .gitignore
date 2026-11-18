@@ -1,0 +1,18 @@
+# Secrets and per-client config never belong in this repo
+*.env
+.env*
+*.key
+secrets*
+
+# Local planning notes
+plan.md
+
+# Part of the toolkit, even where a global gitignore excludes it
+!CLAUDE.md
+
+# Generated
+out/
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
